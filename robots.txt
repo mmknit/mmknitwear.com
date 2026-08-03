@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mmknit.github.io/mmknitwear.com/sitemap.xml
