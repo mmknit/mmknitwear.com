@@ -401,21 +401,36 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <style>
+                                                .faq-item + .faq-item { border-top: 1px solid #e4e4e4; }
+                                                .faq-item summary { cursor: pointer; font-size: 17px; font-weight: 600; color: #393939; padding: 16px 0; list-style: none; display: flex; align-items: center; }
+                                                .faq-item summary::-webkit-details-marker { display: none; }
+                                                .faq-item summary::before { content: '\25B8'; display: inline-block; margin-right: 10px; font-size: 13px; color: #2d9bea; transition: transform 0.2s ease; flex-shrink: 0; }
+                                                .faq-item[open] summary::before { transform: rotate(90deg); }
+                                                .faq-item summary:hover { color: #1e5fa8; }
+                                                .faq-item p { font-size: 15px; color: #666666; margin: 0 0 16px 23px; line-height: 1.7; }
+                                            </style>
                                             <div class="gdlr-core-pbf-element">
-                                                <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
-                                                    <div class="gdlr-core-text-box-item-content" style="font-size: 16px;">
-                                                        <h3>Where is M.M. Knitwear Ltd. located?</h3>
-                                                        <p>Our head office is at House 16, Road 10, Sector 01, Uttara Model Town, Dhaka, and our factory is at Ambagh Road, Nilnagar, Konabari, Gazipur, Bangladesh.</p>
-                                                        <h3>What products does M.M. Knitwear manufacture?</h3>
-                                                        <p>We are a 100% export-oriented knitwear manufacturer producing t-shirts, polo shirts, hoodies, sweatshirts, pants and other knit garments for men, women and kids.</p>
-                                                        <h3>Do you work with international apparel brands?</h3>
-                                                        <p>Yes. We export to more than 10 countries and produce for brands such as Zara, Pepe Jeans, OVS, Terranova, Springfield, Ulla Popken, Crew Clothing, Sfera, Auchan and New Yorker.</p>
-                                                        <h3>How do I request a quotation or product samples?</h3>
-                                                        <p>Send your requirement to bashir@mmknitwear.com or info@mmknitwear.com, or use the contact form on this page, and our marketing team will respond with pricing and sample lead times.</p>
-                                                        <h3>What certifications does your factory hold?</h3>
-                                                        <p>Our factory is certified under ACCORD, OEKO-TEX, AMFORI BSCI, WRAP and SEDEX, and operates to ISO and OHSAS standards for quality and safety.</p>
-                                                    </div>
-                                                </div>
+                                                <details class="faq-item">
+                                                    <summary>Where is M.M. Knitwear Ltd. located?</summary>
+                                                    <p>Our head office is at House 16, Road 10, Sector 01, Uttara Model Town, Dhaka, and our factory is at Ambagh Road, Nilnagar, Konabari, Gazipur, Bangladesh.</p>
+                                                </details>
+                                                <details class="faq-item">
+                                                    <summary>What products does M.M. Knitwear manufacture?</summary>
+                                                    <p>We are a 100% export-oriented knitwear manufacturer producing t-shirts, polo shirts, hoodies, sweatshirts, pants and other knit garments for men, women and kids.</p>
+                                                </details>
+                                                <details class="faq-item">
+                                                    <summary>Do you work with international apparel brands?</summary>
+                                                    <p>Yes. We export to more than 10 countries and produce for brands such as Zara, Pepe Jeans, OVS, Terranova, Springfield, Ulla Popken, Crew Clothing, Sfera, Auchan and New Yorker.</p>
+                                                </details>
+                                                <details class="faq-item">
+                                                    <summary>How do I request a quotation or product samples?</summary>
+                                                    <p>Send your requirement to bashir@mmknitwear.com or info@mmknitwear.com, or use the contact form on this page, and our marketing team will respond with pricing and sample lead times.</p>
+                                                </details>
+                                                <details class="faq-item">
+                                                    <summary>What certifications does your factory hold?</summary>
+                                                    <p>Our factory is certified under ACCORD, OEKO-TEX, AMFORI BSCI, WRAP and SEDEX, and operates to ISO and OHSAS standards for quality and safety.</p>
+                                                </details>
                                             </div>
                                         </div>
                                     </div>
