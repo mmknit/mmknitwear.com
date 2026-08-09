@@ -54,10 +54,13 @@
     <link rel='stylesheet' href='css/page-builder.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
     <style>
-        /* Mobile: 2 client logos per row, 2 certifications per row */
+        /* Client logos: 5 per row desktop, 3 per row mobile */
+        .gdlr-core-gallery-item-holder{ display: flex; flex-wrap: wrap; }
+        .gdlr-core-gallery-item-holder > .gdlr-core-item-list{ float: none; flex: 0 0 20%; max-width: 20%; }
+        .gdlr-core-gallery-item-holder > .gdlr-core-item-list .gdlr-core-media-image{ display: flex; justify-content: center; }
         @media only screen and (max-width: 767px){
-            .gdlr-core-gallery-item .gdlr-core-item-list{ width: 50%; }
-            .gdlr-core-gallery-item .gdlr-core-item-list:nth-child(2n+1){ clear: left; }
+            .gdlr-core-gallery-item-holder > .gdlr-core-item-list{ flex: 0 0 33.3333%; max-width: 33.3333%; }
+            .gdlr-core-gallery-item-holder > .gdlr-core-item-list:nth-child(3n+1){ clear: none; }
             .gdlr-core-personnel-item .gdlr-core-personnel-list-column{ width: 50%; }
             .gdlr-core-personnel-item .gdlr-core-personnel-list-column:nth-child(2n+1){ clear: left; }
         }
@@ -421,65 +424,59 @@
                                             <h2 class="gdlr-core-title-item-title gdlr-core-skin-title " style="font-size: 38px;text-transform: none;">OUR CLIENTS<span class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span></h2></div>
                                     </div>
                                 <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid">
-                                        <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-ulla-popken.png" alt="Client logo - Ulla Popken" width="136" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-terranova.png" alt="Client logo - Terranova" width="140" height="22" loading="lazy"></div>
-                                            </div>
-											<div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-crewclothing.png" alt="Client logo - Crew Clothing" width="130" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-springfield.png" alt="Client logo - Springfield" width="160" height="18" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-sfera.png" alt="Client logo - Sfera" width="129" height="46" loading="lazy"></div>
-                                            </div>
-                                        </div>
-                                    </div>
 									<div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid">
-                                        <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
+                                        <div class="gdlr-core-gallery-item-holder clearfix">
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-ovs.png" alt="Client logo - OVS" width="116" height="46" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-giftcraft.png" alt="Client logo - Giftcraft Collection" width="113" height="46" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-pierrecardin.png" alt="Client logo - Pierre Cardin" width="160" height="26" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-meyman.png" alt="Client logo - Meyman Wardrobe" width="122" height="46" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-piazzaitalia.png" alt="Client logo - Piazza Italia" width="160" height="20" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-shanta.png" alt="Client logo - Shanta Automobiles" width="93" height="46" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-pepejeans.png" alt="Client logo - Pepe Jeans" width="124" height="46" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-foridpukur.png" alt="Client logo - Foridpukur Industrial Park Ltd" width="150" height="46" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-newyorker.png" alt="Client logo - New Yorker" width="160" height="37" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-jkmotors.png" alt="Client logo - JK Motors" width="160" height="25" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-trustchemical.png" alt="Client logo - Trust Chemical Industries Ltd." width="160" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-atlasengineering.png" alt="Client logo - Atlas (Power & Engineering) Ltd." width="160" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-trustgroup.png" alt="Client logo - Trust Group (Colour Fashion)" width="160" height="44" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-shova.png" alt="Client logo - Shova South City Mall" width="102" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-edison.png" alt="Client logo - Edison Group" width="87" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-hossain.png" alt="Client logo - Hossain Group" width="104" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-tamanna.png" alt="Client logo - Tamanna Gaba" width="160" height="18" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-atlaspower.png" alt="Client logo - Atlas Power Ltd." width="69" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-mahbub.png" alt="Client logo - Mahbub Traders" width="113" height="46" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-atlasexport.png" alt="Client logo - Atlas Export" width="68" height="46" loading="lazy"></div>
                                             </div>
                                         </div>
                                     </div>
-									<div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid">
-                                        <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-lahalle.png" alt="Client logo - La Halle" width="160" height="16" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-auchan.png" alt="Client logo - Auchan" width="160" height="28" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-takko.png" alt="Client logo - Takko" width="100" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-sportsdirect.png" alt="Client logo - Sports Direct" width="95" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-zara.png" alt="Client logo - Zara" width="109" height="46" loading="lazy"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-									
                                 </div>
+
+
+
                             </div>
                         </div>
                     </div>
