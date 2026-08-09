@@ -54,18 +54,18 @@
     <link rel='stylesheet' href='css/page-builder.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
     <style>
-        /* Client logos: flex wall so mixed-height logos stay aligned in clean rows */
+        /* Client logos: flex wall, uniform height so rows stay aligned */
         .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex{ display: flex; flex-wrap: wrap; }
         .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-item-list{ flex: 0 0 16.6666%; }
-        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list{ display: flex; align-items: center; justify-content: center; height: 68px; }
-        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list img{ max-width: 100%; max-height: 44px; width: auto; height: auto; }
-        /* Certifications: centered badge logos */
-        .gdlr-core-personnel-item.gdlr-core-personnel-certs .gdlr-core-personnel-list-image{ display: flex; align-items: center; justify-content: center; height: 120px; }
-        .gdlr-core-personnel-item.gdlr-core-personnel-certs .gdlr-core-personnel-list-image img{ max-width: 100%; max-height: 96px; width: auto; height: auto; }
+        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list{ display: flex; align-items: center; justify-content: center; height: 80px; }
+        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list img{ max-width: 100%; height: 53px; width: auto; object-fit: contain; }
+        /* Certifications: centered badge logos on white cards */
+        .gdlr-core-personnel-item.gdlr-core-personnel-certs .gdlr-core-personnel-list-image{ display: flex; align-items: center; justify-content: center; height: 180px; padding: 14px; background: #ffffff; border: 1px solid #e3ebf4; border-radius: 8px; }
+        .gdlr-core-personnel-item.gdlr-core-personnel-certs .gdlr-core-personnel-list-image img{ max-width: 100%; height: 110px; width: auto; object-fit: contain; }
         /* Mobile: 2 client logos per row, 2 certifications per row */
         @media only screen and (max-width: 767px){
             .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-item-list{ flex: 0 0 50%; }
-            .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list{ height: 60px; }
+            .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list{ height: 72px; }
             .gdlr-core-personnel-item .gdlr-core-personnel-list-column{ width: 50%; }
             .gdlr-core-personnel-item .gdlr-core-personnel-list-column:nth-child(2n+1){ clear: left; }
         }
