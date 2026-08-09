@@ -45,30 +45,9 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Product Portfolio of M.M. Knitwear Ltd.",
-      "itemListOrder": "http://schema.org/ItemListOrderAscending",
-      "numberOfItems": 3,
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Men's Pant",
-          "description": "Men's knit pant with acid wash finish, 280 GSM, knitted and sewn at our Gazipur factory."
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Women's Top",
-          "description": "Women's knit top with acid wash finish, 200 GSM, produced in our own garmenting division."
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Kids' Hoodie",
-          "description": "Kids' hoodie in 100% cotton single jersey, 280 GSM, with in-house knitting, dyeing and sewing."
-        }
-      ]
+      "@type": "ImageGallery",
+      "name": "Product Gallery of M.M. Knitwear Ltd.",
+      "description": "Product photos of knitwear manufactured by M.M. Knitwear Ltd."
     }
     </script>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -81,6 +60,21 @@
     <link rel='stylesheet' href='css/page-builder.css' type='text/css' media='all' />
 
     <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+
+    <style>
+        /* Portfolio: uniform image grid so photos stay aligned in clean rows */
+        .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex{ display: flex; flex-wrap: wrap; }
+        .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex .gdlr-core-item-list{ flex: 0 0 25%; }
+        .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex .gdlr-core-portfolio-thumbnail-image-wrap img{ width: 100%; height: 400px; object-fit: cover; }
+        @media only screen and (max-width: 999px){
+            .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex .gdlr-core-item-list{ flex: 0 0 50%; }
+            .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex .gdlr-core-portfolio-thumbnail-image-wrap img{ height: 380px; }
+        }
+        @media only screen and (max-width: 767px){
+            .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex .gdlr-core-item-list{ flex: 0 0 100%; }
+            .gdlr-core-portfolio-item-holder.gdlr-core-portfolio-flex .gdlr-core-portfolio-thumbnail-image-wrap img{ height: auto; object-fit: contain; }
+        }
+    </style>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-70FWYE26S8"></script>
 <script>
@@ -194,174 +188,206 @@
                                             </div>
                                         </div>
 
-                                        <div class="filter gdlr-core-filterer-wrap gdlr-core-js  gdlr-core-item-pdlr gdlr-core-style-text gdlr-core-center-align clearfix">
-                                            <ul>
-                                                <li><a href="#" class="active" data-filter="*">All</a> <span class="kleanity-separater">/</span></li>
-                                                <li><a href="#" data-filter=".class1">Mens</a> <span class="kleanity-separater">/</span></li>
-                                                <li><a href="#" data-filter=".class2">Womens</a> <span class="kleanity-separater">/</span></li>
-                                                <li><a href="#" data-filter=".class3">Kids</a></li>
-                                            </ul>
+                                                                                <div class="gdlr-core-portfolio-item-holder gdlr-core-portfolio-flex clearfix">
+
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/1.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/1.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/2.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/2.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/3.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/3.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/4.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/4.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/5.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/5.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/6.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/6.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/7.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/7.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/8.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/8.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/9.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/9.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/10.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/10.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/11.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/11.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/12.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/12.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/13.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/13.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/14.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/14.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/15.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/15.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/16.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/16.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/17.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/17.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/18.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/18.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/19.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/19.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/20.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/20.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/21.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/21.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/22.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/22.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/23.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/23.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/24.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/24.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/25.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/25.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/26.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/26.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/27.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/27.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-item-pdlr gdlr-core-column-15">
+                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
+                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
+                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/Picture/28.png" data-caption="M.M. Knitwear Product" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/Picture/28.png" alt="M.M. Knitwear product" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
-
-                                        <div class="filter-container gdlr-core-portfolio-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-
-                                            <div class="gdlr-core-item-list class1 gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column-first">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/gallery/mens1.jpg" data-caption="Mens Pant" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/mens1-400x257.jpg" width="700" height="450"  alt="Mens pant" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Mens Pant</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">With Acid Wash <span class="gdlr-core-sep">/</span> 280 GSM</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Men's knit pant with acid wash finish, 280 GSM, knitted and sewn at our Gazipur factory.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class2 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/gallery/women1.jpg" data-caption="Women Top" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/women1-400x257.jpg" width="700" height="450"  alt="Women top" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Women Top</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">With Acid Wash <span class="gdlr-core-sep">/</span> 200 GSM</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Women's knit top with acid wash finish, 200 GSM, produced in our own garmenting division.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class3 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="images/gallery/kids1.jpg" data-caption="Kids Hoodie" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/kids1-400x257.jpg" width="700" height="450"  alt="Kids hoodie" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Kids Hoodie</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">100% Cotton S/J <span class="gdlr-core-sep">/</span> 280 GSM</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Kids' hoodie in 100% cotton single jersey, 280 GSM, with in-house knitting, dyeing and sewing.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class1 gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column-first">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-1.jpg" data-caption="T-Shirt" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-1-400x257.jpg" width="700" height="450"  alt="Cotton knit T-shirt" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">T-Shirt</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton S/J</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Classic cotton knit T-shirt, produced end to end in our in-house knitting, dyeing and garmenting divisions.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class1 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-2.jpg" data-caption="Polo Shirt" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-2-400x257.jpg" width="700" height="450"  alt="Cotton pique polo shirt" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Polo Shirt</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton Pique</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Cotton pique polo shirt, knitted, dyed and sewn at our Gazipur factory.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class2 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-3.jpg" data-caption="Dress" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-3-400x257.jpg" width="700" height="450"  alt="Women's knit dress" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Dress</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton Knit</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Women's knit dress from our latest collection, made with in-house fabric and finishing.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class2 gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column-first">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-4.jpg" data-caption="Women's Top" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-4-400x257.jpg" width="700" height="450"  alt="Women's knit top" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Women's Top</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton Knit</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Women's knit top with in-house fabric, cut and sewn in our garmenting division.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class1 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-5.jpg" data-caption="Sweatshirt" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-5-400x257.jpg" width="700" height="450"  alt="Cotton knit sweatshirt" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Sweatshirt</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton Fleece</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Comfortable knit sweatshirt from our latest collection, fully produced in-house.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class2 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-6.jpg" data-caption="Leggings" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-6-400x257.jpg" width="700" height="450"  alt="Cotton knit leggings" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Leggings</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton Lycra</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Stretch cotton leggings, knitted and sewn in our own divisions.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class1 gdlr-core-item-pdlr gdlr-core-column-20 gdlr-core-column-first">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-7.jpg" data-caption="Jogger" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-7-400x257.jpg" width="700" height="450"  alt="Cotton knit jogger pants" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Jogger</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton Fleece</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Casual knit jogger from our latest collection, produced end to end in-house.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class2 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-8.jpg" data-caption="Tank Top" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-8-400x257.jpg" width="700" height="450"  alt="Cotton knit tank top" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Tank Top</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">Cotton S/J</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Lightweight cotton knit tank top, knitted, dyed and sewn at our own factory.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="gdlr-core-item-list class3 gdlr-core-item-pdlr gdlr-core-column-20">
-                                                <div class="gdlr-core-portfolio-grid  gdlr-core-left-align gdlr-core-style-with-frame">
-                                                    <div class="gdlr-core-portfolio-thumbnail gdlr-core-media-image  gdlr-core-style-margin-icon">
-                                                        <div class="gdlr-core-portfolio-thumbnail-image-wrap  gdlr-core-zoom-on-hover"><a class="gdlr-core-ilightbox gdlr-core-js " href="upload/product-9.jpg" data-caption="Kids Wear" data-ilightbox-group="gdlr-core-img-group-1"><img src="images/gallery/product-9-400x257.jpg" width="700" height="450"  alt="Kids' cotton knitwear" loading="lazy"><span class="gdlr-core-image-overlay  gdlr-core-portfolio-overlay gdlr-core-image-overlay-center-icon gdlr-core-js gdlr-core-with-margin"><span class="gdlr-core-image-overlay-content"><span class="gdlr-core-portfolio-icon-wrap"><i class="gdlr-core-portfolio-icon arrow_expand"></i></span></span></span></a></div>
-                                                    </div>
-                                                    <div class="gdlr-core-portfolio-content-wrap gdlr-core-skin-divider">
-                                                        <div class="gdlr-core-portfolio-grid-frame gdlr-core-skin-e-background" style="opacity: 1;"></div>
-                                                        <h2 class="gdlr-core-portfolio-title gdlr-core-skin-title" style="font-size: 17px;font-weight: 600;letter-spacing: 0px;text-transform: none;">Kids Wear</h2><span class="gdlr-core-portfolio-info gdlr-core-portfolio-info-tag gdlr-core-info-font gdlr-core-skin-caption">100% Cotton</span>
-                                                        <p style="font-size: 14px;margin-top: 10px;color: #666666;">Kids' knitwear from our latest collection, made to strict quality standards.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

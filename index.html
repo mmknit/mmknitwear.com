@@ -54,10 +54,18 @@
     <link rel='stylesheet' href='css/page-builder.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
     <style>
+        /* Client logos: flex wall so mixed-height logos stay aligned in clean rows */
+        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex{ display: flex; flex-wrap: wrap; }
+        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-item-list{ flex: 0 0 16.6666%; }
+        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list{ display: flex; align-items: center; justify-content: center; height: 68px; }
+        .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list img{ max-width: 100%; max-height: 44px; width: auto; height: auto; }
+        /* Certifications: centered badge logos */
+        .gdlr-core-personnel-item.gdlr-core-personnel-certs .gdlr-core-personnel-list-image{ display: flex; align-items: center; justify-content: center; height: 120px; }
+        .gdlr-core-personnel-item.gdlr-core-personnel-certs .gdlr-core-personnel-list-image img{ max-width: 100%; max-height: 96px; width: auto; height: auto; }
         /* Mobile: 2 client logos per row, 2 certifications per row */
         @media only screen and (max-width: 767px){
-            .gdlr-core-gallery-item .gdlr-core-item-list{ width: 50%; }
-            .gdlr-core-gallery-item .gdlr-core-item-list:nth-child(2n+1){ clear: left; }
+            .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-item-list{ flex: 0 0 50%; }
+            .gdlr-core-gallery-item-holder.gdlr-core-gallery-flex .gdlr-core-gallery-list{ height: 60px; }
             .gdlr-core-personnel-item .gdlr-core-personnel-list-column{ width: 50%; }
             .gdlr-core-personnel-item .gdlr-core-personnel-list-column:nth-child(2n+1){ clear: left; }
         }
@@ -422,63 +430,63 @@
                                     </div>
                                 <div class="gdlr-core-pbf-element">
                                     <div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid">
-                                        <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-ulla-popken.png" alt="Client logo - Ulla Popken" width="136" height="46" loading="lazy"></div>
+                                        <div class="gdlr-core-gallery-item-holder gdlr-core-gallery-flex clearfix">
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/1.png" alt="Client logo" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-terranova.png" alt="Client logo - Terranova" width="140" height="22" loading="lazy"></div>
-                                            </div>
-											<div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-crewclothing.png" alt="Client logo - Crew Clothing" width="130" height="46" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/2.png" alt="Client logo" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-springfield.png" alt="Client logo - Springfield" width="160" height="18" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/3.png" alt="Client logo" loading="lazy"></div>
                                             </div>
                                             <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-sfera.png" alt="Client logo - Sfera" width="129" height="46" loading="lazy"></div>
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/4.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/5.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/6.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/7.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/8.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/9.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/10.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/11.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/12.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/13.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/14.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/15.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/16.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/17.png" alt="Client logo" loading="lazy"></div>
+                                            </div>
+                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
+                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="images/Brands/18.png" alt="Client logo" loading="lazy"></div>
                                             </div>
                                         </div>
                                     </div>
-									<div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid">
-                                        <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-ovs.png" alt="Client logo - OVS" width="116" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-pierrecardin.png" alt="Client logo - Pierre Cardin" width="160" height="26" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-piazzaitalia.png" alt="Client logo - Piazza Italia" width="160" height="20" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-pepejeans.png" alt="Client logo - Pepe Jeans" width="124" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-newyorker.png" alt="Client logo - New Yorker" width="160" height="37" loading="lazy"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-									<div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix  gdlr-core-gallery-item-style-grid">
-                                        <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix" data-layout="fitrows">
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-column-first gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-lahalle.png" alt="Client logo - La Halle" width="160" height="16" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-auchan.png" alt="Client logo - Auchan" width="160" height="28" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-takko.png" alt="Client logo - Takko" width="100" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-sportsdirect.png" alt="Client logo - Sports Direct" width="95" height="46" loading="lazy"></div>
-                                            </div>
-                                            <div class="gdlr-core-item-list gdlr-core-gallery-column  gdlr-core-column-12 gdlr-core-item-pdlr gdlr-core-item-mgb">
-                                                <div class="gdlr-core-gallery-list gdlr-core-media-image"><img src="upload/client-zara.png" alt="Client logo - Zara" width="109" height="46" loading="lazy"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-									
                                 </div>
                             </div>
                         </div>
@@ -522,84 +530,88 @@
                                     </div>
                                 </div>
                                 <div class="gdlr-core-pbf-element">
-                                    <div class="gdlr-core-personnel-item gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-personnel-item-style-grid gdlr-core-personnel-style-grid" style="padding-bottom: 0px;">
+                                    <div class="gdlr-core-personnel-item gdlr-core-personnel-certs gdlr-core-item-pdb clearfix  gdlr-core-left-align gdlr-core-personnel-item-style-grid gdlr-core-personnel-style-grid" style="padding-bottom: 0px;">
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-column-first gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-accord.png" width="550" height="500" alt="ACCORD certification"  loading="lazy"/>
-                                                </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">ACCORD</h3>
-												</div>
-                                            </div>
-                                        </div>
-                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
-                                            <div class="gdlr-core-personnel-list clearfix">
-                                                <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-oekotex.png" width="550" height="500" alt="OEKO-TEX certification"  loading="lazy"/>
-                                                </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">OEKO-TEX</h3>
+                                                    <img src="images/Certificates/1.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-bsci.png" width="550" height="500" alt="BSCI certification"  loading="lazy"/>
-                                                </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">AMFORI BSCI</h3>
+                                                    <img src="images/Certificates/2.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-intertek.png" width="550" height="500" alt="Intertek certification"  loading="lazy"/>
-                                                </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">UKAS INTERTEK</h3>
+                                                    <img src="images/Certificates/3.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
-										<div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-wrap.png" width="550" height="500" alt="WRAP certification"  loading="lazy"/>
-                                                </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">WRAP</h3>
+                                                    <img src="images/Certificates/4.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
-										<div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-sedex.png" width="550" height="500" alt="SEDEX membership"  loading="lazy"/>
-                                                </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">SEDEX</h3>
+                                                    <img src="images/Certificates/5.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
-										<div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-<img src="upload/compliance-organic100.png" width="550" height="500" alt="Organic 100 certification"  loading="lazy"/>
-</div>
-<div class="gdlr-core-personnel-list-content-wrap">
-<h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">ORGANIC 100</h3>
+                                                    <img src="images/Certificates/6.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
-										<div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
                                             <div class="gdlr-core-personnel-list clearfix">
                                                 <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
-                                                    <img src="upload/compliance-iso-ohsas.png" width="550" height="500" alt="ISO and OHSAS certification"  loading="lazy"/>
+                                                    <img src="images/Certificates/7.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
-                                                <div class="gdlr-core-personnel-list-content-wrap">
-                                                    <h3 class="gdlr-core-personnel-list-title" style="font-size: 18px;font-weight: 600;text-transform: none;text-align: center;">ISO OHSAS</h3>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                            <div class="gdlr-core-personnel-list clearfix">
+                                                <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                    <img src="images/Certificates/8.png" alt="Certification badge"  loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                            <div class="gdlr-core-personnel-list clearfix">
+                                                <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                    <img src="images/Certificates/9.png" alt="Certification badge"  loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                            <div class="gdlr-core-personnel-list clearfix">
+                                                <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                    <img src="images/Certificates/10.png" alt="Certification badge"  loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                            <div class="gdlr-core-personnel-list clearfix">
+                                                <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                    <img src="images/Certificates/11.png" alt="Certification badge"  loading="lazy"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gdlr-core-personnel-list-column  gdlr-core-column-15 gdlr-core-item-pdlr">
+                                            <div class="gdlr-core-personnel-list clearfix">
+                                                <div class="gdlr-core-personnel-list-image gdlr-core-media-image  gdlr-core-opacity-on-hover gdlr-core-zoom-on-hover">
+                                                    <img src="images/Certificates/12.png" alt="Certification badge"  loading="lazy"/>
                                                 </div>
                                             </div>
                                         </div>
